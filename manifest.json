@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 3,
+	"name": "FBS Image Loader",
+	"version": "1.2.0",
+	"description":	"『桜降る代に決闘を』の準公式ツールであるふるよにボードシミュレータにおいてカード画像を表示するためのツールです。",
+
+	"content_scripts": [
+		{
+			"matches": ["https://furuyoni-simulator.herokuapp.com/*"],
+			"js": ["imageloader.js"],
+			"run_at" : "document_end"
+		}
+	],
+	"web_accessible_resources": [{
+		"resources": [
+			"cardlist_ja.json",
+			"cardlist_en.json",
+			"cardlist_ko.json",
+			"cards/*.png"
+		],
+		"matches": ["<all_urls>"]
+	}],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+}
