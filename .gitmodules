@@ -1,0 +1,3 @@
+[submodule "furuyoni-data"]
+	path = furuyoni-data
+	url = https://github.com/tetradice/furuyoni-data.git
