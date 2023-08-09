@@ -60,7 +60,6 @@ function image_load() {	// カード画像設定
 				}
 			}
 			openelements[i].children[0].setAttribute('hidden', '');	// テキストを非表示に 
-			//		if (openelements[i].className.match("selected") != null) {
 			if (openelements[i].children[2] != null) {	// マリガンの時の数字だけ表示 
 				openelements[i].children[1].removeAttribute('hidden');
 				try {
